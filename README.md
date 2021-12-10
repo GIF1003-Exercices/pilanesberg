@@ -1,11 +1,9 @@
 # Pilanesberg
-### Exercice de révision pour l'examen final de GIF-1003
+## Exercice de révision pour l'examen final de GIF-1003
 
-# Avertissement: cet exercice n'a pas été rédigé ni sanctionné par le professeur
-du cours GIF-1003.  C'est une initiative personnelle et je ne fais aucune promesse
-ni garantie sur le contenu de l'examen final.
+# Avertissement: cet exercice n'a pas été rédigé ni sanctionné par le professeur du cours GIF-1003.  C'est une initiative personnelle et je ne fais aucune promesse ni garantie sur le contenu de l'examen final.
 
-### Mode d'emploi
+## Mode d'emploi
 
 Ce présent exercice n'est ni plus ni moins qu'un prétexte pour réviser les différentes notions
 essentielles de l'examen final, qui sont essentiellement ce qui a été vu lors du TP3:
@@ -21,7 +19,7 @@ essentielles de l'examen final, qui sont essentiellement ce qui a été vu lors 
 
 Le présent dépôt peut être cloné tel quel et exécuté dans Netbeans.  Je vous suggère de suivre les étapes suivantes:
 
-Commencez par lire la section "Formulation du problème"
+### Commencez par lire la section "Formulation du problème"
 
 - Lire le problème, le comprendre et rédiger sur papier la hiérarchie de classe
 - Rédiger les headers
@@ -33,13 +31,13 @@ Un exemple de cette démarche est déjà inclus dans ce dépôt avec la classe A
 Mais je vous suggère fortement de rédiger vous-même votre propre solution avant
 de consulter une quelconque solution externe...  Sinon vous perdez votre temps!!!
 
-Posez-vous aussi des questions afin de mieux comprendre:
+### Posez-vous aussi des questions afin de mieux comprendre:
 
 - Pourquoi telle méthode est virtuelle?
 - Pourquoi telles méthodes sont const ou non?
 - Pourquoi n'y a-t-il pas de mutateur pour tel attribut?
 
-### COMMENCER ICI: Formulation du problème, lisez ce qui suit et réfléchissez
+## COMMENCER ICI: Formulation du problème, lisez ce qui suit et réfléchissez
 
 Vous êtes à l'emploi de la réserve faunique de Pilanesberg en Afrique du Sud.  Vous devez implanter un système permettant d'accéder à la base de données du parc sur les animaux.  Les populations d'hippopotames et d'éléphants doivent être suivies attentivement...
 
@@ -53,9 +51,9 @@ Pour les éléphants, par-contre, on veut seulement savoir la longueur des défe
 
 Comme premier exercice, concevez la liste des classes nécessaires pour faire le suivi demandé.  Dites quelles classes seront de base, et quelles classes seront dérivées.  Si des classes abstraites sont nécessaires, dites pourquoi.  Essayez de prévoir quelles méthodes seront demandées pour chacune des classes, selon votre jugement.
 
-### Étape suivante: rélexion initiale sur le problèm̀e
+## Étape suivante: rélexion initiale sur le problèm̀e
 
-#### Hiérarchie des classes:
+### Hiérarchie des classes:
 ______________________
 
 Nous avons des animaux, qui peuvent être de deux espèces.  Ces différents animaux devront être stockés dans une structure de données de type "liste".
@@ -74,16 +72,17 @@ Une de ces classes devrait-elle être abstraite? Et pourquoi?
 
 Le point fondamental à considérer ici est: y a-t-il un sens à créer une instance de telle ou telle classe?  Ici à mon avis, la classe Animal devrait être abstraite, puisque on ne rencontrera jamais dans notre parc un animal sans espèce: un animal sera soit un éléphant, soit un hippopotame, mais jamais un "animal générique".
 
-Donc pour résumer:
+### Donc pour résumer:
 
-classe abstraite Animal.
+________________________
+#### classe abstraite Animal.
 
-classes dérivées de Animal, qui seront instantiables:
+#### classes dérivées de Animal, qui seront instantiables:
 
 Hippopotame
 Elephant
 
-classe qui va utiliser Hippopotame et Elephant dans une liste:
+#### classe qui va utiliser Hippopotame et Elephant dans une liste:
 
 ListeDesAnimaux
 
